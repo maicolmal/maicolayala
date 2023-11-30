@@ -1,0 +1,504 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    
+    background-color: rgb(10, 118, 148);
+    color:black;
+    width: 100%;
+    height: 1024px;
+    
+}
+
+.navbar {
+    width: 100%;
+    
+}
+
+.encabezado {
+    width: 60%;
+    display: flex;
+    background-color: rgb(10, 118, 148);
+    top: 0;
+    position: relative;
+    height: 320px;
+    padding-left: 50px;
+    padding-right: 70px;
+    
+}
+
+
+.brand {
+    
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.brand img {
+    width: 300px;
+    height: 300px;
+    border-radius: 200px;
+}
+
+.brand a {
+    font-size: 30px;
+    color: black;
+    text-decoration: none;
+    position: fixed;
+    z-index: 1000;
+    right: 70px;
+}
+
+.menu {
+    padding-top: 90px;
+}
+.menu a {
+    text-decoration: none;
+    color: black;
+    font-size: 50px;
+    
+}
+
+.menu li {
+    margin-bottom: 90px;
+
+}
+
+
+
+.menu .linea1 a {
+    position: relative;
+    left: 2%;
+}
+
+.menu .linea2 a {
+    position: relative;
+    left: 24%;
+}
+
+.menu .linea3 a {
+    position: relative;
+    left: 46%;
+}
+
+.menu .linea4 a {
+    position: relative;
+    left: 78%;
+}
+
+
+.inicio h1{
+    margin-left: 380px;
+    font-size: 50px;
+}
+
+.wrapper-datos{
+    padding-top: 50px;
+    width: 100%;
+    height: 1024px;
+    background-color:rgb(10, 118, 148);
+}
+.datos h2{
+    margin-left: 130px;
+    margin-bottom: 50px;
+    font-size: 40px;
+}
+.habilidades-container {
+    padding-top: 50px;
+    width: 100%;
+    height: 1024px;
+    background-color: rgb(10, 118, 148);
+}
+.datosa h2{
+    margin-left: 130px;
+    margin-bottom: 70px;
+    font-size: 40px;
+}
+
+.estudios-container {
+    padding-top: 50px;
+    width: 100%;
+    height: 1024px;
+    background-color: rgb(10, 118, 148);
+}
+
+.caja-contacto {
+    padding-left: 90px;
+    padding-right: 90px;
+    width: 100%;
+    height: 600px;
+    background-color: rgb(10, 118, 148);
+    padding-top: 50px;
+}
+
+
+.caja-contacto h1 {
+    margin-bottom: 80px;
+    text-align: center;
+    font-size: 50px;
+}
+
+
+/* modo oscuro*/
+
+.switch {
+    background: rgba(117, 147, 238, 1);
+    border-radius: 1000px;
+    border: none;
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    outline: none;
+    width: 90px;
+    height: 35px;
+
+}
+
+.switch span {
+    width: 50px;
+    height: 50px;
+    line-height: 30px;
+    display: block;
+    background: none;
+    color: black;
+}
+
+.switch::before {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    background: white;
+    top: -5px;
+    left: 0;
+    right: unset;
+    border-radius: 100px;
+    transition: .3s ease all;
+    box-shadow: 0px 0px 2px 2px rgba(0,0,0,.2);
+
+}
+
+.switch.active::before {
+    background: rgba(242, 232, 131, 1);
+    color: black;
+    right: 0;
+    left: unset;
+}
+
+body.active .wrapper {
+    background-color: rgba(31, 26, 65, 1);
+
+}
+
+body.active .menu a {
+    color: white;
+}
+
+body.active a{
+
+    color: white;
+
+}
+
+body.active .encabezado {
+    background-color: rgba(31, 26, 65, 1);
+
+}
+
+body.active .wrapper-datos {
+    background-color: rgba(31, 26, 65, 1);
+    
+}
+
+body.active .datos h2 {
+    color: white;
+}
+
+body.active .habilidades-container {
+    background-color: rgba(31, 26, 65, 1);
+
+}
+
+body.active .datosa h2 {
+    color: white;
+}
+
+body.active .estudios-container {
+    background-color: rgba(31, 26, 65, 1);
+
+}
+
+body.active .caja-contacto {
+    background-color: rgba(31, 26, 65, 1);
+    color: white;
+}
+
+
+
+/* acaba modo oscuro */
+
+
+/*formulario */
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+	background: #E5E5E5;
+}
+
+main {
+	max-width: 800px;
+	width: 90%;
+	margin: auto;
+	padding: 40px;
+}
+
+.formulario {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 20px;
+}
+
+.formulario__label {
+	display: block;
+	font-weight: 700;
+	padding: 10px;
+	cursor: pointer;
+}
+
+.formulario__grupo-input {
+	position: relative;
+}
+
+.formulario__input {
+	width: 100%;
+	background: #fff;
+	border: 3px solid transparent;
+	border-radius: 3px;
+	height: 45px;
+	line-height: 45px;
+	padding: 0 40px 0 10px;
+	transition: .3s ease all;
+}
+
+.formulario__input:focus {
+	border: 3px solid #0075FF;
+	outline: none;
+	box-shadow: 3px 0px 30px rgba(163,163,163, 0.4);
+}
+
+.formulario__input-error {
+	font-size: 12px;
+	margin-bottom: 0;
+	display: none;
+}
+
+.formulario__input-error-activo {
+	display: block;
+}
+
+.formulario__validacion-estado {
+	position: absolute;
+	right: 10px;
+	bottom: 15px;
+	z-index: 100;
+	font-size: 16px;
+	opacity: 0;
+}
+
+.formulario__checkbox {
+	margin-right: 10px;
+}
+
+.formulario__grupo-terminos, 
+.formulario__mensaje,
+.formulario__grupo-btn-enviar {
+	grid-column: span 2;
+}
+
+.formulario__mensaje {
+	height: 45px;
+	line-height: 45px;
+	background: #F66060;
+	padding: 0 15px;
+	border-radius: 3px;
+	display: none;
+}
+
+.formulario__mensaje-activo {
+	display: block;
+}
+
+.formulario__mensaje p {
+	margin: 0;
+}
+
+.formulario__grupo-btn-enviar {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.formulario__btn {
+	height: 45px;
+	line-height: 45px;
+	width: 30%;
+	background: #000;
+	color: #fff;
+	font-weight: bold;
+	border: none;
+	border-radius: 3px;
+	cursor: pointer;
+	transition: .1s ease all;
+}
+
+.formulario__btn:hover {
+	box-shadow: 3px 0px 30px rgba(163,163,163, 1);
+}
+
+.formulario__mensaje-exito {
+	font-size: 14px;
+	color: #119200;
+	display: none;
+}
+
+.formulario__mensaje-exito-activo {
+	display: block;
+}
+
+/* ----- -----  Estilos para Validacion ----- ----- */
+.formulario__grupo-correcto .formulario__validacion-estado {
+	color: #1ed12d;
+	opacity: 1;
+}
+
+.formulario__grupo-incorrecto .formulario__label {
+	color: #bb2929;
+}
+
+.formulario__grupo-incorrecto .formulario__validacion-estado {
+	color: #bb2929;
+	opacity: 1;
+}
+
+.formulario__grupo-incorrecto .formulario__input {
+	border: 3px solid #bb2929;
+}
+
+
+/* ----- -----  Mediaqueries ----- ----- */
+@media screen and (max-width: 800px) {
+	.formulario {
+		grid-template-columns: 1fr;
+	}
+
+	.formulario__grupo-terminos, 
+	.formulario__mensaje,
+	.formulario__grupo-btn-enviar {
+		grid-column: 1;
+	}
+
+	.formulario__btn {
+		width: 100%;
+	}
+}
+
+@media only screen and (max-width:800px){
+    .wrapper {
+    
+        background-color: rgb(10, 118, 148);
+        color:black;
+        width: 100%;
+        height: 600px;
+        
+    }
+
+    .menu a {
+        text-decoration: none;
+        color: black;
+        font-size: 22px;
+        
+        
+    }
+
+    .menu li {
+        margin-top: 30px;
+        margin-bottom: 0;
+    
+    }
+
+    .encabezado {
+        display: flex;
+        width: 80%;
+    }
+
+    .brand {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .brand img {
+        width: 200px;
+        height: 200px;
+        border-radius: 200px;
+    }
+
+    .brand a {
+        font-size: 20px;
+    }
+
+    .wrapper-datos {
+        height: 600px;
+        padding-top: 150px;
+    }
+
+    .datos h2{
+        margin-left: 70px;
+        margin-bottom: 20px;
+        font-size: 16px;
+    }
+    .habilidades-container {
+        padding-top: 50px;
+        width: 100%;
+        height: 500px;
+        background-color: rgb(10, 118, 148);
+    }
+    .datosa h2{
+        margin-left: 70px;
+        margin-bottom: 30px;
+        font-size: 16px;
+    }
+    
+    .estudios-container {
+        padding-top: 50px;
+        width: 100%;
+        height: 500px;
+        background-color: rgb(10, 118, 148);
+    }
+    
+    .caja-contacto {
+        padding-left: 90px;
+        padding-right: 90px;
+        width: 100%;
+        height: 700px;
+        background-color: rgb(10, 118, 148);
+        padding-top: 50px
+    }
+
+    .caja-contacto h1 {
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    
+
+}
+
